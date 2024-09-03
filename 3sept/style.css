@@ -1,0 +1,24 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: aqua;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+#button {
+  margin-top: 2rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 6px;
+}
