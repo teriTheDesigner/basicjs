@@ -30,7 +30,6 @@ document.getElementById("todoButton").addEventListener("click", addToList);
 
 function addToList() {
   const newinput = document.getElementById("input").value;
-
   const newli = document.createElement("li");
   newli.textContent = newinput;
   newli.classList.add("li");

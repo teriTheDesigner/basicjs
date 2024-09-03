@@ -133,13 +133,37 @@ console.log(secondCar.stop());
 
 // Arrays
 
-// let students = ["Patrik", "Lavi", "Thomas", 45, [], undefined];
-// students.push("Kai");
-// console.log(students);
-// console.log(students[0]);
+let students = ["Patrik", "Lavi", "Thomas", 45, [], undefined];
+students.push("Kai");
+console.log(students);
+console.log(students[0]);
 
-// let students2 = students.slice(0, 3);
-// console.log(students2);
+let students2 = students.slice(0, 3);
+console.log(students2);
 
-// students.push({ name: "Sofia", hobby: "Roller skating" });
-// console.log(students[7].hobby);
+students.push({ name: "Sofia", hobby: "Roller skating" });
+console.log(students[7].hobby);
+
+// Arrays and Objects
+
+const Student = {
+  name: "Sara",
+  id: 35,
+  grades: [],
+};
+
+function addGrade(student, newGrade) {
+  student.grades.push(newGrade);
+}
+addGrade(Student, 5);
+
+addGrade(Student, 7);
+console.log(Student);
+
+function updateStudentName(student, newName) {
+  student.name = newName;
+}
+
+updateStudentName(Student, "Hannah");
+
+console.log(Student);

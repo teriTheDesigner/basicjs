@@ -25,6 +25,10 @@ body {
 
 .todo {
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   margin-top: 3rem;
   background-color: rgb(182, 251, 251);
@@ -52,7 +56,6 @@ body {
   background-color: white;
   margin-top: 0.5rem;
   text-decoration: none;
-  list-style: none;
   border-radius: 6px;
-  width: 100%;
+  width: 350px;
 }
