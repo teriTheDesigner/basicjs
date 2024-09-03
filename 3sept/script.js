@@ -19,3 +19,20 @@ document.getElementById("button").addEventListener("mouseout", function () {
   message.classList.remove("visible");
   message.classList.add("hidden");
 });
+
+document.getElementById("input").addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    addToList();
+  }
+});
+
+document.getElementById("todoButton").addEventListener("click", addToList);
+
+function addToList() {
+  const newinput = document.getElementById("input").value;
+
+  const newli = document.createElement("li");
+  newli.textContent = newinput;
+  newli.classList.add("li");
+  document.getElementById("ul").appendChild(newli);
+}

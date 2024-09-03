@@ -22,3 +22,37 @@ body {
   padding: 1rem;
   border-radius: 6px;
 }
+
+.todo {
+  width: 30%;
+  margin: auto;
+  margin-top: 3rem;
+  background-color: rgb(182, 251, 251);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+#input {
+  padding: 0.5rem;
+  width: 300px;
+  border-radius: 6px;
+  border: none;
+}
+
+#todoButton {
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(198, 223, 223);
+}
+
+.li {
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: white;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  list-style: none;
+  border-radius: 6px;
+  width: 100%;
+}
