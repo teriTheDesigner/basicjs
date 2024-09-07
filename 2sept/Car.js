@@ -7,7 +7,7 @@ export class Car {
   }
 
   getCarInfo() {
-    const info =
+    return (
       this.make +
       " " +
       "model" +
@@ -16,8 +16,8 @@ export class Car {
       " " +
       "and it was made in" +
       " " +
-      this.year;
-    return info;
+      this.year
+    );
   }
   start() {
     this.isRunning = true;
