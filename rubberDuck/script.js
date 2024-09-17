@@ -11,6 +11,14 @@ function addProblem() {
   list.appendChild(item);
 
   document.getElementById("main").appendChild(list);
+
+  fetch("http://localhost:3000", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ newProblem: newProblem }),
+  });
 }
 
 const mrDuck = document.getElementById("mrDuck");
@@ -29,3 +37,20 @@ function displayMessage() {
 function hideMessage() {
   document.getElementById("message").classList.add("hide");
 }
+
+async function getData() {
+  const url = "http://localhost:3000";
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const messages = await response.json();
+    console.log("these are all messages", messages);
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+
+window.addEventListener("load", getData());
